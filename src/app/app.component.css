@@ -1,0 +1,59 @@
+section {
+  background: #f7f7f7;
+  border-radius: 3px;
+  text-align: center;
+  margin: 1em;
+  position: relative !important;
+  padding-bottom: 10px;
+}
+md-content {
+  margin-right: 7px;
+}
+.label {
+  position: absolute;
+  bottom: 5px;
+  left: 7px;
+  font-size: 14px;
+  opacity: 0.54;
+}
+
+
+.plano-menu{
+  border-right:1px solid #999;
+  width:200px;
+  overflow:auto;
+  float:left;
+ /* font-family: 'Josefin Sans', sans-serif;*/
+  font-family: 'Raleway', sans-serif;
+  margin-right: 50px;
+  font-size:20px;
+}
+
+.plano-menu-item{
+  background-color: white;
+  overflow:auto;
+  border-bottom:1px solid #CCC;
+  padding:9px;
+}
+.plano-menu-item:hover{
+  /*background-color: rgb(168, 5, 50);*/
+  background-color: rgb(57, 75,83);
+  color:#EEE;
+  cursor:pointer;
+}
+
+.plano-menu-item-label{
+  float:left;
+}
+
+.plano-menu-item i{
+  float:right;
+}
+
+/*.fa{
+  color: black;
+}*/
+
+.fa:hover{
+  color: rgb(168, 5, 50);
+}

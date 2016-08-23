@@ -1,0 +1,21 @@
+
+<div class="error" *ngIf="error">{{error}}</div>
+<button (click)="addProject()">Add New Project</button>
+
+<h2>My Projects</h2>
+<ul class="project">
+  <li *ngFor="let project of projects"
+    [class.selected]="project === selectedProject"
+    (click)="onSelect(project)">
+    <span class="badge">{{project.id}}</span> {{project.compagnie}}
+  </li>
+</ul>
+
+
+
+
+<div *ngIf="selectedProject">
+  <project-details [project]="selectedProject"></project-details>
+  
+  <button (click)="gotoDetail()">View Details</button>
+</div>

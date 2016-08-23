@@ -1,0 +1,155 @@
+
+<div style="overflow:auto;">
+
+
+  <div class="plano-menu">
+    <div class="plano-menu-item">
+      <span class="plano-menu-item-label">Tableau de bord</span>
+      <i class="fa fa-fort-awesome" aria-hidden="true"></i>     
+    </div>
+    <div class="plano-menu-item">
+      <span class="plano-menu-item-label">Projets</span>
+      <i class="fa fa-folder" aria-hidden="true"></i>     
+    </div>
+    <div class="plano-menu-item">
+      <span class="plano-menu-item-label">Langagiers</span>
+      <i class="fa fa-user" aria-hidden="true"></i>   
+    </div>
+    <div class="plano-menu-item">
+      <span class="plano-menu-item-label">Ressources</span>
+      <i class="fa fa-users" aria-hidden="true"></i>   
+    </div>
+    <div class="plano-menu-item">
+      <span class="plano-menu-item-label">Clients</span>
+  
+      <i class="fa fa-user-secret" aria-hidden="true"></i>   
+    </div>
+    <div class="plano-menu-item">
+      <span class="plano-menu-item-label">Facturation</span>
+      <i class="fa fa-money" aria-hidden="true"></i>   
+    </div>
+    <div class="plano-menu-item">
+      <span class="plano-menu-item-label">Admin</span>
+      <i class="fa fa-lock" aria-hidden="true"></i>   
+    </div>
+    <div class="plano-menu-item">
+      <span class="plano-menu-item-label">Rapports</span>
+  
+      <i class="fa fa-file-text-o" aria-hidden="true"></i>   
+    </div>
+    <div class="plano-menu-item">
+      <span class="plano-menu-item-label">Satisfaction</span>
+      <i class="fa fa-smile-o" aria-hidden="true"></i>   
+    </div>
+    <div class="plano-menu-item">
+      <span class="plano-menu-item-label">Feuille de temps</span>
+      <i class="fa fa-clock-o" aria-hidden="true"></i>   
+    </div>
+
+
+
+  </div>
+  <div style="float:left;">
+
+    <my-projects></my-projects>
+  </div>  
+
+</div>
+<!--
+<md-toolbar *ngIf="!selection">Materials</md-toolbar>
+
+
+<md-content>
+  <div layout="column" class="md-inline-form">
+  <form>
+    <md-input class="demo-full-width" placeholder="Company (disabled)" disabled value="Google">
+    </md-input>
+    <table style="width: 100%" cellspacing="0"><tr>
+      <td><md-input placeholder="First name" style="width: 100%"></md-input></td>
+      <td><md-input placeholder="Really Super Long Last Name Placeholder That Will Be Truncated" style="width: 100%"></md-input></td>
+    </tr></table>
+    <p>
+      <md-input class="demo-full-width" placeholder="Address" value="1600 Amphitheatre Pkway"></md-input>
+      <md-input class="demo-full-width" placeholder="Address 2"></md-input>
+    </p>
+    <table style="width: 100%" cellspacing="0"><tr>
+      <td><md-input class="demo-full-width" placeholder="City"></md-input></td>
+      <td><md-input class="demo-full-width" placeholder="State"></md-input></td>
+      <td><md-input #postalCode class="demo-full-width" maxLength="5"
+                    placeholder="Postal Code"
+                    value="94043">
+        <md-hint align="end">{{postalCode.characterCount}} / 5</md-hint>
+      </md-input></td>
+    </tr></table>
+  </form>
+</div>
+
+  <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+    <button md-button>{{title1}}</button>
+    <button md-button md-no-ink class="md-primary">Primary (md-noink)</button>
+    <button md-button disabled="true" class="md-primary">Disabled</button>
+    <button md-button class="md-warn">{{title4}}</button>
+    <div class="label">Flat</div>
+  </section>
+  <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+    <button md-raised-button class="md-raised">Button</button>
+    <button md-raised-button class="md-raised md-primary">Primary</button>
+    <button md-raised-button disabled="true" class="md-raised md-primary">Disabled</button>
+    <button md-raised-button class="md-raised md-warn">Warn</button>
+    <div class="label">Raised</div>
+  </section>
+  <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+    <button md-fab class="md-fab" aria-label="Eat cake">
+      <i md-icon>cake</i>
+    </button>
+    <button md-fab class="md-primary" aria-label="Use Android">
+      <i md-icon>android</i>
+    </button>
+    <button md-fab disabled="true" aria-label="Comment">
+      <i md-icon>comment</i>
+    </button>
+    <button md-fab class="md-primary md-hue-2" aria-label="Profile">
+      <i md-icon>people</i>
+    </button>
+    <button md-fab class="md-mini" aria-label="Eat cake">
+      <i md-icon>cake</i>
+    </button>
+    <button md-fab class="md-mini md-primary" aria-label="Use Android">
+      <i md-icon>android</i>
+    </button>
+    <div class="label">FAB</div>
+  </section>
+  <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+    <a md-button [href]="googleUrl" target="_blank">Default Link</a>
+    <a md-button class="md-primary" [href]="googleUrl" target="_blank">Primary Link</a>
+    <button md-button>Default Button</button>
+    <div class="label">Link vs. Button</div>
+  </section>
+  <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+    <button md-button class="md-primary md-hue-1">Primary Hue 1</button>
+    <button md-raised-button class="md-warn md-hue-2">Warn Hue 2</button>
+    <button md-button class="md-accent">Accent</button>
+    <button md-raised-button class="md-accent md-hue-1">Accent Hue 1</button>
+    <div class="label">Themed</div>
+  </section>
+  <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+    <button md-button class="md-icon-button md-primary" aria-label="Settings">
+      <i md-icon>menu</i>
+    </button>
+    <button md-button class="md-icon-button md-accent" aria-label="Favorite">
+      <i md-icon>favorite</i>
+    </button>
+    <button md-button class="md-icon-button" aria-label="More">
+      <i md-icon>more_vert</i>
+    </button>
+    <a md-button href="http://google.com"
+       title="Launch Google.com in new window"
+       target="_blank"
+       disabled="true"
+       aria-label="Google.com"
+       class="md-icon-button launch">
+      <i md-icon>launch</i>
+    </a>
+    <div class="label">Icon Button</div>
+  </section>
+</md-content>-->
